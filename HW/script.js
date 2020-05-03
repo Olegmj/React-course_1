@@ -123,13 +123,15 @@ checkSaving();
 function chooseOtpExpenses () {
 
     for (let i = 0; i <= 3; i++) {
-        let questionOptEcpenses = +prompt ("Статья не обязательных расходов", '');
-        appData.optionalExpenses = questionOptEcpenses;
+
+        let questionOptExpenses = +prompt ("Статья не обязательных расходов", '');
+        
+        appData.optionalExpenses = questionOptExpenses;
     
     }
         
 }
-chooseOtpExpenses ();
+chooseOtpExpenses (); 
 
 
 
